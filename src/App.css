@@ -1,3 +1,7 @@
+.none {
+  display: none;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +36,265 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ------------------------------------------- codigo nuevo ------------------ css CARS ID ----------------------- */
+
+.id-card {
+  border: 1px solid #242222;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #2aa1a533;
+  width: 350px;
+}
+
+.id-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.id-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.id-card p {
+  margin: 5px 0;
+}
+
+/* --------------------------------------------------- css GREETINGS ----------------- */
+
+/* Estilos para el componente Greetings */
+.Greetings {
+  background-image: linear-gradient(to bottom, #535553, #edf1ed);
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #242222;
+  width: 260px;
+  display: inline-block;
+}
+
+.Greetings p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Estilos específicos para cada idioma */
+
+.Greetings.pt {
+  background-image: linear-gradient(to bottom, #00a63f, #b6fcb4);
+  color: #00532e;
+}
+
+.Greetings.de {
+  background-image: linear-gradient(to bottom, #8d6aee, #e4d4fd);
+  color: #004980;
+}
+
+.Greetings.en {
+  background-image: linear-gradient(to bottom, #0b9e99, #e9fdd8);
+  color: #296626;
+}
+
+.Greetings.es {
+  background-image: linear-gradient(to bottom, #fa8484, #ffd5b8);
+  color: #b34723;
+}
+
+.Greetings.fr {
+  background-image: linear-gradient(to bottom, #ec9626, #ffe5b8);
+  color: #b35e23;
+}
+
+/* --------------------------------------------------------------------- numero random ------------------------- */
+.random-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.random-number {
+  font-size: 24px;
+  color: #f8f8f8;
+  background-color: #ad70fe;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  animation: colorCycle 4s linear infinite alternate;
+  transition: background-color 1s ease;
+}
+
+@keyframes colorCycle {
+  0% {
+    background-color: #748bff;
+  }
+
+  50% {
+    background-color: #24cfc7d4;
+  }
+
+  100% {
+    background-color: #5f1158;
+  }
+}
+
+/* ------------------------------------------------ box color ------------------ */
+.colores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.BoxColor {
+  flex: 0 0 calc(25% - 15px);
+  /* Calcula el ancho del elemento */
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.BoxColor p {
+  margin: 10;
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  /* Texto más grueso */
+}
+
+/* ------------------------------------------ credit card ------------------------- */
+
+.creditCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.credit-card {
+  width: 422px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border: 1px solid black;
+  margin: 10px;
+
+}
+
+.type {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #0066cc;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.bank {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.owner {
+  margin: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bank {
+  font-size: 40px;
+}
+
+.expiration,
+.number {
+  text-align: left;
+  font-size: 22px;
+  margin-left: 55px;
+}
+
+.chip-icon,
+.wifi-icon {
+  width: 50px;
+}
+
+.card-logo {
+  width: 60px;
+}
+
+/* ---------------------------------------------------- rating -------------------------------------------------- */
+.rating img {
+  width: 30px;
+}
+
+/* Estilos para los números originales */
+.numeroOriginal {
+  display: inline-block;
+  width: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #0000008d;
+  border-radius: 13px;
+}
+
+.numeroOriginal.bajo {
+  background-color: rgb(209, 64, 64);
+  border: solid 2px black;
+}
+
+.numeroOriginal.alto {
+  background-color: rgb(196 148 48);
+  border: solid 2px black;
+}
+
+/* --------------------------------------------------------------- driver car ---------------------------------------------- */
+.driver {
+  margin-top: 20px;
+  width: 700px;
+
+}
+
+.driver img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 15px;
+
+}
+
+.driver-card {
+  background-image: linear-gradient(to bottom, #2d258b, #5fc3dc9a);
+  display: flex;
+  border: solid 2px black;
+  margin: 30px;
+
+}
+
+.driver-info {
+  align-self: center;
+  font-size: 25px;
 }
