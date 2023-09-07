@@ -6,7 +6,17 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
-import DriverCard from "./components/DriverCard"
+import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/likeButton";
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/Profiles';
+import Facebook2 from './components/Facebook2'
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
+import SingleColorPicker from './components/SingleColorPicker';
 
 function App() {
 
@@ -147,14 +157,62 @@ function App() {
 
         <DriverCard
           name="Jeff Bezos"
-          rating={3.8}
+          rating={2.8}
           img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
           car={{
             model: "Amazon Prime Van",
             licensePlate: "AMZN-123"
           }}
         />
+      </div>
 
+      <div className='none'>
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      <div className='none'>
+        <ClickablePicture />
+      </div>
+
+      {/* <div className='diceDiv'> */}
+      <div className='none'>
+        <Dice />
+        <Dice />
+        <Dice />
+      </div>
+
+      <div className='none'>
+        <Carousel
+          images={[
+            'https://randomuser.me/api/portraits/women/1.jpg',
+            'https://randomuser.me/api/portraits/men/1.jpg',
+            'https://randomuser.me/api/portraits/women/2.jpg',
+            'https://randomuser.me/api/portraits/men/2.jpg'
+          ]}
+        />
+
+      </div>
+
+      {/* <div className='Numbers-Table'> */}
+      <div className='none'>
+        <NumbersTable limit={10} />
+        <NumbersTable limit={12} />
+        <NumbersTable limit={15} />
+      </div>
+
+      <div className='none'>
+        <Facebook2 />
+
+      </div>
+
+      <div className='none'>
+        <SignupPage />
+      </div>
+
+      <div className='none1'>
+        <h1>RGB Color Picker</h1>
+        <RGBColorPicker />
       </div>
 
     </div>
